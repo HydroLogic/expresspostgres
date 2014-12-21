@@ -8,6 +8,8 @@ I had some trouble with SSL issues and followed the luislavena thing below and i
 http://stackoverflow.com/questions/19150017/ssl-error-when-installing-rubygems-unable-to-pull-data-from-https-rubygems-o/
 https://gist.github.com/luislavena/f064211759ee0f806c88
 http://compass-style.org/install/
+
+I also manually added ruby to the path c:\ruby21\bin this works for compass also
 3. npm install
 4. NOT WORKING: new server folder and put bin, routes, views and app.js
 5. NOT WORKING: change line in app.js to app.use(express.static(path.join(__dirname, '../public')));
@@ -37,6 +39,12 @@ http://compass-style.org/install/
 
 18. git remote add origin https://github.com/zross/expresspostgres.git
 git push -u origin master
+
+19. you may get an error with body-parser deprecated ...extended etc
+so change this:
+app.use(bodyParser.urlencoded());
+To this
+app.use(bodyParser.urlencoded({ extended: true }));
 
 
 
