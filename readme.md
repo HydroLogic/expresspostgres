@@ -33,6 +33,10 @@ http://compass-style.org/install/
 15. I took some jade templates from https://github.com/primaryobjects/Node.js-Bootstrap-Starter-Template/tree/master/views and then the sticky footer from view-source:http://getbootstrap.com/examples/sticky-footer-navbar/
 
 16. Type npm install pg --save
+17. I ended up having to comment out the favicon require and the line about the favicon for the moment.
+
+18. git remote add origin https://github.com/zross/expresspostgres.git
+git push -u origin master
 
 
 
