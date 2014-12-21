@@ -1,0 +1,6 @@
+node_modules
+public/bower_components
+express_postgres.sublime-project
+express_postgres.sublime-workspace
+run_nodemon_server.bat
+run_npm_server.bat
