@@ -53,7 +53,13 @@ app.use(bodyParser.urlencoded({ extended: true }));
 2. New file in root called Procfile and in it you have web:node bin/www
 
 3. Change port to 80
-
+heroku login (invokes toolbelt)
+8) heroku create
+9) git remote –v will list heroku
+git push heroku master
+ps:scale web=1 (allocate resources)
+heroku open
+heroku logs (to see logs)
 <s>4.http://stackoverflow.com/questions/19490938/push-database-to-heroku-how-to-use-heroku-pgpush
 
 
