@@ -6,7 +6,7 @@ $(document).ready(function() {
 
     // Populate the user table on initial page load
     $('.verylargebutton').click(function(){
-        populateTable()
+        populateTable();
     });
 
 });

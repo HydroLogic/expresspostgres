@@ -79,7 +79,11 @@ https://devcenter.heroku.com/articles/heroku-postgres-import-export
 heroku addons:add pgbackups
 pg_dump -Fc --no-acl --no-owner -h localhost -U postgres leaflet > data/leaflet.dmp
 
-heroku pgbackups:restore DATABASE 'http://www.zevross.com/temp/leaflet.dmp' --confirm cryptic-bayou-1232
+heroku pgbackups:restore DATABASE 'http://www.zevross.com/temp/leaflet.dmp' --confirm intense-hamlet-2204 
+
+At command line: createdb -h localhost -U postgres -p 5433 leaflet
+pg_restore -U postgres -p 5433 --dbname=leaflet --verbose data/leaflet.dmp
+
 
 
 
