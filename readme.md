@@ -46,5 +46,35 @@ app.use(bodyParser.urlencoded());
 To this
 app.use(bodyParser.urlencoded({ extended: true }));
 
+##Heroku
+
+1. Put the version of npm and node in the package.json under engines. npm --version and node --version
+
+2. New file in root called Procfile and in it you have web:node bin/www
+
+3. Change port to 80
+
+<s>4.http://stackoverflow.com/questions/19490938/push-database-to-heroku-how-to-use-heroku-pgpush
+
+
+
+4. Added environment variables PGUSER=postgres and PGPASSWORD=postgres
+
+5: heroku pg:push leaflet DATABASE --app cryptic-bayou-1232
+
+http://stackoverflow.com/questions/25870388/heroku-pgpull-failing-to-populate-schema</s>
+
+Lots of research here but it looks like pg:push is not available on Windows yet so I used the backup resprore
+http://stackoverflow.com/questions/25870388/heroku-pgpull-failing-to-populate-schema
+
+
+https://devcenter.heroku.com/articles/heroku-postgres-import-export
+
+heroku addons:add pgbackups
+pg_dump -Fc --no-acl --no-owner -h localhost -U postgres leaflet > data/leaflet.dmp
+
+heroku pgbackups:restore DATABASE 'http://www.zevross.com/temp/leaflet.dmp' --confirm cryptic-bayou-1232
+
+
 
 
