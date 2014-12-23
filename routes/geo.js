@@ -1,6 +1,8 @@
 var pg = require("pg");
-//var pg = require('pg.js');
-var conString = "postgres://postgres:spatial@localhost:5433/leaflet"; //zev's is 5433
+var config = require('./config').get(process.env.NODE_ENV);
+var conString = config.pgConnect;
+
+// var conString = "postgres://postgres:spatial@localhost:5432/leaflet"; //zev's is 5433
 var mySelection = "select * from locations";
 
 

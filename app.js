@@ -1,16 +1,17 @@
 
 var express = require('express');
- 
+var config = require('./routes/config');
+
+
 var http = require('http');
 var path = require('path');
 //var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-
+  
 var routes = require('./routes');
-var users = require('./routes/user');
-
+var utils = require('./routes/utils');
 var geo = require('./routes/geo');
 
 var app = express();
@@ -31,15 +32,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.get('/', routes.index);
 
 app.get('/userlist', geo.metrics)
-// app.get('/userlist', function(req, res) {
-//     geo.metrics();
-// });
 
-// app.get('userlist', geo.metrics);
-
-
-// app.get('/api', geo.metrics);
-app.get('/users', users.list);
 
 /// catch 404 and forwarding to error handler
 app.use(function(req, res, next) {
