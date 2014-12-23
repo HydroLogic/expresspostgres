@@ -21,7 +21,7 @@ console.log('in populate')
 
 
     // jQuery AJAX call for JSON
-    $.getJSON( '/userlist', function( data ) {
+    $.getJSON( '/api/zev', function( data ) {
 
         // For each item in our JSON, add a table row and cells to the content string
         $.each(data, function(){

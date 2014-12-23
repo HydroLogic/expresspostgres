@@ -3,18 +3,21 @@ var config = require('./config').get(process.env.NODE_ENV);
 var conString = config.pgConnect;
 
 // var conString = "postgres://postgres:spatial@localhost:5432/leaflet"; //zev's is 5433
-var mySelection = "select * from locations";
+
 
 
 
 exports.metrics = function(req, res, next){
-	console.log('in metrics')
+	
+	var query = "select * from locations where name = '" + req.params.name + "'"
+	console.log(query)
+
 	pg.connect(conString, function(err, client, done) {
 	    if(err) {
 	      return console.error('error fetching client from pool', err);
 	    }
 	    
-	    client.query("select * from locations", function(err, result) {
+	    client.query(query, function(err, result) {
 	      
 		      //call `done()` to release the client back to the pool
 		      done();
@@ -28,7 +31,6 @@ exports.metrics = function(req, res, next){
 		      }
 		      
 		      //else
-		      console.log(result.rows)
 		      res.json(result.rows);
 	    });
 	  });

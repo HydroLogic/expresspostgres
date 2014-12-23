@@ -31,7 +31,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', routes.index);
 
-app.get('/userlist', geo.metrics)
+app.get('/api/:name', geo.metrics)
 
 
 /// catch 404 and forwarding to error handler
