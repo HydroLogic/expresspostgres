@@ -22,9 +22,12 @@ I also manually added ruby to the path c:\ruby21\bin this works for compass also
 
 9. bower init (accept defaults)
 10. bower install bootstrap --save
+10.5. bower install angular angular-resource angular-route --save
 <s>11. I added a public/index.html</s>
 12. I changed the arrangement of hte routes/index.js following this link:
 <s>http://cwbuecheler.com/web/tutorials/2014/restful-web-app-node-express-mongodb/</s>
+
+12.5. added images folder under public
 
 13. You should be able to start the server with `nodemon` or `npm start`. Note that I believe the starting directory for the server is driven by the 'start' in the `package.json` file. nodemon will 'know' where to start by reading the package.json but you could also type `nodemon bin/www`. Actually, I added 
 
@@ -47,6 +50,38 @@ so change this:
 app.use(bodyParser.urlencoded());
 To this
 app.use(bodyParser.urlencoded({ extended: true }));
+
+# Angular
+1. create public/app directory and app.js within
+2. create views/partials/main.jade
+3. add div(ng-view) to index.jade
+4. add body(ng-app='myApp') to layout.jade
+5. add scripts tags to scripts.js for angular
+6. App.js gets:
+
+	angular.module('myApp', ['ngResource', 'ngRoute']);
+
+	angular.module('myApp').config(function($routeProvider, $locationProvider){
+	  $locationProvider.html5Mode(true);
+	  $routeProvider
+	    .when('/', {templateUrl:'/partials/main', controller:'mainCtrl'});
+	});
+
+	angular.module('app').controller('mainCtrl', function($scope){
+	  $scope.myVar = "Hello Angular";
+	});
+
+7. In server.js define server side route
+
+	app.get('/paritals/:partialPath', function(req, res){
+		res.render('partials/' + req.params.partialPath)
+	});
+
+
+# The "path" when loading the page at first
+
+1. hits bin/www which tells it 
+
 
 ##Heroku
 

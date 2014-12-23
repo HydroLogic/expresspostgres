@@ -12,12 +12,11 @@ html
 			| <style>
 			| body { padding-top: 60px; }
 			| </style>
-			script(src='//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js')
-			script(src='javascripts/global.js')
-	body
-
+	body(ng-app='myApp')
+		
 		include header
 		block content
 		include footer
+		include scripts
 
 

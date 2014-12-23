@@ -5,7 +5,7 @@ var config = require('./routes/config');
 
 var http = require('http');
 var path = require('path');
-//var favicon = require('serve-favicon');
+var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
@@ -28,7 +28,10 @@ app.use(cookieParser());
 app.use(require('node-compass')({mode: 'expanded'}));
 app.use(express.static(path.join(__dirname, 'public')));
 //app.use(app.router);
-
+app.get('/partials/:partialPath', function(req, res){
+    console.log('in partials');
+    res.render('partials/' + req.params.partialPath);
+});
 app.get('/', routes.index);
 
 app.get('/api/:name', geo.metrics)
@@ -59,7 +62,7 @@ if (app.get('env') === 'development') {
 app.use(function(err, req, res, next) {
     res.render('error', {
         message: err.message,
-        error: {}
+        error: err
     });
 });
 
