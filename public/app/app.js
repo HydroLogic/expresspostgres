@@ -6,10 +6,6 @@ angular.module('myApp').config(function($routeProvider, $locationProvider){
   requireBase: false//https://docs.angularjs.org/error/$location/nobase
 });
   $routeProvider
-    .when('/', {templateUrl:'/partials/main', controller:'mainCtrl'});
+    .when('/', {templateUrl:'/partials/main', controller:'mvMainCtrl'});
 });
 
-angular.module('myApp').controller('mainCtrl', function($scope){
-  console.log('abc');
-  $scope.myVar = "Hello Angular";
-});

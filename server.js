@@ -34,7 +34,7 @@ app.get('/partials/:partialPath', function(req, res){
 });
 app.get('/', routes.index);
 
-app.get('/api/:name', geo.metrics)
+app.get('/api/:name', geo.metrics);
 
 
 /// catch 404 and forwarding to error handler

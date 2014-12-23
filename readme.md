@@ -80,7 +80,11 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 # The "path" when loading the page at first
 
-1. hits bin/www which tells it 
+1. hits bin/www which tells it to load the server - server.js
+2. The index.jade is loaded and this "extends" layout and also has ng-view
+3. The layout has the body(ng-app='myApp') and also refers to the scripts.js to load scripts.
+4. Because the index.jade (actually layout.jade) refers to myApp, the myApp gets bootstrapped. This is in public/app/app.js.
+5. As part of app.js there is a route provider `.when('/', {templateUrl:'/partials/main', controller:'mainCtrl'});` so that it knows when it gets the main page that it should load main.jade from partials into the place where it says ng-view.
 
 
 ##Heroku
