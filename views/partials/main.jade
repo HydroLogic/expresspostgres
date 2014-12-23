@@ -1,2 +1,5 @@
-h1 This is a partial
-h2 {{myVar}}
+.panel.panel-primary
+	.panel-heading.text-center {{myVar}}
+	.panel-body
+		.row(ng-repeat="dat in geodata")
+			.col-md-3 {{dat.name}} at {{dat.address}}

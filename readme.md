@@ -127,5 +127,17 @@ pg_restore -U postgres -p 5433 --dbname=leaflet --verbose data/leaflet.dmp
 
 
 
+# Create the table
 
+CREATE TABLE locations (
+    name        varchar(10),
+    address       varchar(40) NOT NULL,
+    lat         float,
+    long      float
+);
+
+INSERT INTO locations VALUES ('zev', '303 Fairmount', 42.440370, -76.480074);
+INSERT INTO locations VALUES ('nancy', '224 Ridgedale', 42.437542, -76.479420);
+INSERT INTO locations VALUES ('bruce', '224 Roger Roger', 42.437542, -76.479420);
+INSERT INTO locations VALUES ('bruce', '30 Sodom', 42.416739, -76.406482); 
 
