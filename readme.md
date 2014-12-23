@@ -30,6 +30,8 @@ I also manually added ruby to the path c:\ruby21\bin this works for compass also
 
 `"start": "nodemon ./bin/www"` to package.json and now I can do npm start
 
+Also you may be working at home or have the app at Heroku so you may want to, on a windows machine, use `SET NODE_ENV=home`. I set the default to work.
+
 14. Keep in mind the that the render will put an index.html in your public folder. So if there is already an index.html file then it will use this (at least it appears so).
 
 15. I took some jade templates from https://github.com/primaryobjects/Node.js-Bootstrap-Starter-Template/tree/master/views and then the sticky footer from view-source:http://getbootstrap.com/examples/sticky-footer-navbar/

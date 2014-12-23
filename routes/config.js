@@ -13,5 +13,7 @@ var conf = {
 };
 
 exports.get = function get(env){
-    return conf[env] || conf.work;
-}
+    //TODO: this doesn't work to give the 
+    //conf.env properly
+    return conf.env || conf.work;
+};

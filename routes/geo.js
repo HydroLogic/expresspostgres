@@ -10,7 +10,6 @@ var conString = config.pgConnect;
 exports.metrics = function(req, res, next){
 	
 	var query = "select * from locations where name = '" + req.params.name + "'"
-	console.log(query)
 
 	pg.connect(conString, function(err, client, done) {
 	    if(err) {
