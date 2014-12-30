@@ -1,3 +1,10 @@
+# To do
+
+1. Change the data collection to a factory
+2. Why takes so long to load? Does the jade/sass processing happen each time?
+
+
+
 # Steps for creating app
 
 1. new folder
@@ -141,7 +148,5 @@ INSERT INTO locations VALUES ('nancy', '224 Ridgedale', 42.437542, -76.479420);
 INSERT INTO locations VALUES ('bruce', '224 Roger Roger', 42.437542, -76.479420);
 INSERT INTO locations VALUES ('bruce', '30 Sodom', 42.416739, -76.406482); 
 
-# To do
 
-1. Change the data collection to a factory
 

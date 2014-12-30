@@ -15,7 +15,7 @@ $(document).ready(function() {
 
 // Fill table with data
 function populateTable() {
-console.log('in populate')
+console.log('in populate');
     // Empty content string
     var tableContent = '';
 

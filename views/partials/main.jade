@@ -1,5 +1,14 @@
 .panel.panel-primary
 	.panel-heading.text-center {{myVar}}
 	.panel-body
-		.row(ng-repeat="dat in geodata")
-			.col-md-3 {{dat.name}} at {{dat.address}}
+		table.table-striped
+			thead
+				th Name
+				th Address
+			tbody
+				tr(ng-repeat="dat in geodata")
+					td {{dat.name}}
+					td {{dat.address}}
+
+
+
