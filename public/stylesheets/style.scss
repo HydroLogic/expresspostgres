@@ -4,7 +4,8 @@ $color2: #0B401D;
 $color3: #99BFAA;
 $color4: #A69B8D;
 $color5: #11592A;
-$footer-height:60px;
+$footer-height:40px;
+$panel-primary-height: 200px;
 // http://www.hubcab.org/#13.00/40.7219/-73.9484
 body {
     font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
@@ -18,17 +19,29 @@ body {
     p, h2 {
         color: white;
         text-align:center;
-        margin:$footer-height/4;
+        margin-top: 10px;
+        // margin:$footer-height/2;
     }
 
 }
-.panel-primary {
-    border-color: $color2 !important;
-    >.panel-heading {
-        color: #fff;
-        background-color: $color2 !important;
-        border-color: $color2 !important;
+#map { height: 180px; }
+.chart {
+    // position: absolute;
+    // left: 50px;
+    // right: 50px;
+    // bottom: 200px;
+    // border-color: $color2 !important;
+    // margin-left: 5px;
+    // margin-right: 5px;
+    background-color: #99BFAA;
+    opacity: 0.5;
+    height: 100px;
+    width: 90%;
+
+    p{
+      padding:20px;
     }
+
 }
 .verylargebutton {
     width: 200px;

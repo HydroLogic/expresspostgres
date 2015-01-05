@@ -279,7 +279,7 @@
 			"file": "readme.md",
 			"settings":
 			{
-				"buffer_size": 6068,
+				"buffer_size": 6150,
 				"line_ending": "Windows"
 			}
 		},
@@ -287,15 +287,7 @@
 			"file": "public/javascripts/global.js",
 			"settings":
 			{
-				"buffer_size": 1247,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "views/index.jade",
-			"settings":
-			{
-				"buffer_size": 406,
+				"buffer_size": 1248,
 				"line_ending": "Windows"
 			}
 		},
@@ -303,57 +295,55 @@
 			"file": "views/partials/main.jade",
 			"settings":
 			{
-				"buffer_size": 151,
+				"buffer_size": 222,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "server.js",
+			"file": "views/index.jade",
 			"settings":
 			{
-				"buffer_size": 1666,
+				"buffer_size": 121,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "public/app/main/mvMainCtrl.js",
+			"file": "views/header.jade",
 			"settings":
 			{
-				"buffer_size": 197,
+				"buffer_size": 1,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"contents": "Package Control Messages\n========================\n\nPackage Control:\n---------------\n\n  Version 3.0 Release Notes\n  \n  \n  **** Windows Sublime Text 3 Users ****\n  \n  Due to a bug in Package Control 2.0, Windows ST3 users will need to open the\n  Sublime Text console (ctrl+`) and execute the following Python to properly\n  upgrade. All other users may ignore this part of the message.\n  \n  Make sure NOT to copy the leading two spaces, or an \"unexpected indent\" error\n  will occur.\n  \n  import urllib.request,os; pr='Preferences.sublime-settings'; ip='ignored_packages'; n='Package Control'; s=sublime.load_settings(pr); ig=s.get(ip); ig.append(n); s.set(ip,ig); sublime.save_settings('Preferences.sublime-settings'); pf=n+'.sublime-package'; urllib.request.install_opener(urllib.request.build_opener(urllib.request.ProxyHandler())); by=urllib.request.urlopen('https://packagecontrol.io/'+pf.replace(' ','%20')).read(); open(os.path.join(sublime.installed_packages_path(),pf),'wb').write(by); ig.remove(n); s.set(ip,ig); sublime.save_settings(pr); print('Package Control: 3.0.0 upgrade successful!')\n  \n  ********\n  \n  \n  Package Control 3.0 adds a bunch of polish, improving the Sublime Text\n  experience for users and package developers:\n  \n   - improved upgrades of themes, color schemes and syntaxes\n   - dependency support\n   - SSL for Linux\n   - new secondary Windows HTTP backend\n   - patches for Python in Sublime Text 2 on Windows\n   - commands to easily remove channels and repositories\n   - an events API for packages\n   - improved documentation\n  \n  \n  As of July 2014, I now work for myself. This has allowed me to spend more time\n  working on open source software, including Package Control. If you appreciate\n  the work I've done, please consider a small donation. If even 5% of regular\n  users donated the price of a coffee or beer, that would cover quite a bit of\n  my development time! See https://packagecontrol.io/about for options.\n  \n  \n  Some recent Package Control stats:\n  \n   - every weekday over 1M JSON requests hit the channel server\n   - in December, the channel server will transmit 4TB+ of compressed JSON\n   - users have installed, upgraded or removed 85M+ packages since late 2011\n  \n  \n  Read more about the release at:\n  \n  https://packagecontrol.io/news#2014-12-23-Package_Control_30_Released\n  \n",
+			"file": "views/layout.jade",
 			"settings":
 			{
-				"buffer_size": 2331,
-				"line_ending": "Windows",
-				"name": "Package Control Messages",
-				"scratch": true
+				"buffer_size": 468,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "views/footer.jade",
+			"settings":
+			{
+				"buffer_size": 82,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "public/stylesheets/style.scss",
+			"settings":
+			{
+				"buffer_size": 759,
+				"line_ending": "Windows"
 			}
 		},
 		{
 			"file": "routes/index.js",
 			"settings":
 			{
-				"buffer_size": 178,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "public/app/app.js",
-			"settings":
-			{
-				"buffer_size": 349,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "views/scripts.jade",
-			"settings":
-			{
-				"buffer_size": 395,
+				"buffer_size": 184,
 				"line_ending": "Windows"
 			}
 		}
@@ -761,14 +751,21 @@
 		"/X/web_development/testing/express_postgres2/public/app",
 		"/X/web_development/testing/express_postgres2/public/app/main",
 		"/X/web_development/testing/express_postgres2/public/javascripts",
+		"/X/web_development/testing/express_postgres2/public/stylesheets",
 		"/X/web_development/testing/express_postgres2/routes",
 		"/X/web_development/testing/express_postgres2/views",
 		"/X/web_development/testing/express_postgres2/views/partials"
 	],
 	"file_history":
 	[
+		"/X/web_development/testing/express_postgres2/public/javascripts/global.js",
+		"/X/web_development/testing/express_postgres2/views/index.jade",
 		"/X/web_development/testing/express_postgres2/views/partials/main.jade",
+		"/X/web_development/testing/express_postgres2/server.js",
+		"/X/web_development/testing/express_postgres2/public/app/main/mvMainCtrl.js",
+		"/X/web_development/testing/express_postgres2/routes/index.js",
 		"/X/web_development/testing/express_postgres2/views/scripts.jade",
+		"/X/web_development/testing/express_postgres2/public/app/app.js",
 		"/X/web_development/testing/express_postgres2/views/layout.jade",
 		"/X/web_development/testing/express_postgres2/bin/www",
 		"/X/projects/cehtp/web/.gitignore",
@@ -888,13 +885,7 @@
 		"/C/Windows/System32/drivers/etc/hosts",
 		"/C/Users/Zev Ross/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
 		"/C/wamp/www/testing/interactive/gis/raw/gis.txt",
-		"/C/wamp/www/testing/interactive/src/yepnope.1.5.4-min.js",
-		"/C/wamp/www/testing/interactive/interactiveWork.sublime-workspace",
-		"/C/wamp/www/testing/interactive/queuetest.html",
-		"/C/wamp/www/testing/interactive/tmpmappt.html",
-		"/C/wamp/www/testing/interactive/tmpmap.html",
-		"/C/wamp/www/testing/d3/old/circle/d3.html",
-		"/C/wamp/www/testing/d3/old/circle/zev.js"
+		"/C/wamp/www/testing/interactive/src/yepnope.1.5.4-min.js"
 	],
 	"find":
 	{
@@ -1062,7 +1053,7 @@
 	"groups":
 	[
 		{
-			"selected": 6,
+			"selected": 7,
 			"sheets":
 			[
 				{
@@ -1071,15 +1062,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6068,
+						"buffer_size": 6150,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								6066,
-								6066
+								129,
+								129
 							]
 						],
 						"settings":
@@ -1088,10 +1079,10 @@
 							"syntax": "Packages/Markdown Extended/Syntaxes/Markdown Extended.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 2523.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 8,
 					"type": "text"
 				},
 				{
@@ -1100,15 +1091,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1247,
+						"buffer_size": 1248,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								604,
-								604
+								467,
+								467
 							]
 						],
 						"settings":
@@ -1127,19 +1118,78 @@
 				},
 				{
 					"buffer": 2,
-					"file": "views/index.jade",
+					"file": "views/partials/main.jade",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 406,
+						"buffer_size": 222,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								372,
-								372
+								20,
+								20
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Extended.tmTheme",
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "views/index.jade",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 121,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								76,
+								76
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Extended.tmTheme",
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "views/header.jade",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
 							]
 						],
 						"settings":
@@ -1156,87 +1206,56 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "views/partials/main.jade",
+					"buffer": 5,
+					"file": "views/layout.jade",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 151,
+						"buffer_size": 468,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								149,
-								149
+								171,
+								171
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Extended.tmTheme",
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "views/footer.jade",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 82,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								68,
+								68
 							]
 						],
 						"settings":
 						{
 							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Extended.tmTheme",
 							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "server.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1666,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1020,
-								1020
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Extended.tmTheme",
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 320.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 9,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "public/app/main/mvMainCtrl.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 197,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								197,
-								197
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Extended.tmTheme",
-							"open_with_edit": true,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1246,26 +1265,28 @@
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 7,
+					"file": "public/stylesheets/style.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2331,
+						"buffer_size": 759,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2331,
-								2331
+								131,
+								131
 							]
 						],
 						"settings":
 						{
 							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Extended.tmTheme",
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"word_wrap": true
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1275,20 +1296,20 @@
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 8,
 					"file": "routes/index.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 178,
+						"buffer_size": 184,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								166,
-								166
+								172,
+								172
 							]
 						],
 						"settings":
@@ -1300,67 +1321,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "public/app/app.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 349,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								332,
-								332
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Extended.tmTheme",
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
 					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "views/scripts.jade",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 395,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								389,
-								389
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Extended.tmTheme",
-							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
 					"type": "text"
 				}
 			]

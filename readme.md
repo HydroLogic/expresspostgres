@@ -58,6 +58,11 @@ app.use(bodyParser.urlencoded());
 To this
 app.use(bodyParser.urlencoded({ extended: true }));
 
+20. bower install angular-bootstrap --save
+21. bower install leaflet
+
+
+
 # Angular
 1. create public/app directory and app.js within
 2. create views/partials/main.jade
@@ -84,7 +89,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 		res.render('partials/' + req.params.partialPath)
 	});
 
-
+8. added ui.bootstrap here angular.module('myApp', ['ngResource', 'ngRoute', 'ui.bootstrap']);
+9. added ui.bootstrap to script
 # The "path" when loading the page at first
 
 1. hits bin/www which tells it to load the server - server.js

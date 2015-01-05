@@ -5,3 +5,8 @@ angular.module('myApp').controller('mvMainCtrl', function($scope, $http){
 
   });
 });
+
+
+angular.module('myApp').controller('CollapseDemoCtrl', function ($scope) {
+  $scope.isCollapsed = false;
+});

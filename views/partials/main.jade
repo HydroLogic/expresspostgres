@@ -1,14 +1,22 @@
-.panel.panel-primary
-	.panel-heading.text-center {{myVar}}
-	.panel-body
-		table.table-striped
-			thead
-				th Name
-				th Address
-			tbody
-				tr(ng-repeat="dat in geodata")
-					td {{dat.name}}
-					td {{dat.address}}
+div#map
+div(ng-controller="CollapseDemoCtrl")
+	button.btn.btn-default(ng-click="isCollapsed = !isCollapsed") Toggle collapse
+	hr
+	div(collapse="isCollapsed")
+		div.chart
+			p This will be the chart
+
+
+
+//- .row.chart
+	//- table.table-striped
+	//- 	thead
+	//- 		th Name
+	//- 		th Address
+	//- 	tbody
+	//- 		tr(ng-repeat="dat in geodata")
+	//- 			td {{dat.name}}
+	//- 			td {{dat.address}}
 
 
 
