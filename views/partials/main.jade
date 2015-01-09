@@ -1,22 +1,20 @@
 div#map
+div(ng-controller="ZevTestCtrl")
+	h1 This number comes from Angular: {{someImportantInfo[0]}}
+	p Bacon ipsum dolor amet pancetta jowl strip steak, flank beef sausage rump doner tail. Tenderloin tongue jowl, turkey beef ribs cow alcatra tail flank meatloaf corned beef spare ribs pastrami tri-tip rump. Pancetta jowl flank, ball tip pastrami beef ribs venison biltong leberkas picanha. Andouille picanha turkey shank leberkas hamburger cow jowl short loin jerky swine tenderloin beef.
 div(ng-controller="CollapseDemoCtrl")
 	button.btn.btn-default(ng-click="isCollapsed = !isCollapsed") Toggle collapse
 	hr
 	div(collapse="isCollapsed")
 		div.chart
-			p This will be the chart
-
-
-
-//- .row.chart
-	//- table.table-striped
-	//- 	thead
-	//- 		th Name
-	//- 		th Address
-	//- 	tbody
-	//- 		tr(ng-repeat="dat in geodata")
-	//- 			td {{dat.name}}
-	//- 			td {{dat.address}}
+			table.table-striped
+				thead
+					th Name
+					th Address
+				tbody
+					tr(ng-repeat="dat in geodata")
+						td {{dat.name}}
+						td {{dat.address}}
 
 
 
