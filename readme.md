@@ -3,6 +3,8 @@
 1. Change the data collection to a factory
 2. Why takes so long to load? Does the jade/sass processing happen each time?
 3. I used bower to grab "regular" leaflet but I probably want an angular leaflet
+4. Something funky with the footer
+5. Change the favicon
 
 
 
